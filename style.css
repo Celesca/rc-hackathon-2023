@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap');
+
+:root {
+    --background-color: orange;
+    --dark-background-color: red;
+}
+
+* , ::after , ::before {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin:0; 
+    padding:0;
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+}
+
+/* Sidebar collapsed */
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.sidebar-nav {
+    padding:0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: white;
+    position: relative;
+    display: block;
+}
+
+.sidebar-item:hover {
+    background-color: var(--dark-background-color);
+    transition: background-color 0.1s ease-in-out;
+}
+
+/*Sidebar Container*/
+.sidebar-container {
+    background: var(--background-color);
+}
+
+/* Content */
+
+.image-show {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+}
+
+.head-container {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-container button {
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 150px;
+}
+
+/* Statics */
+
+.statics {
+    height: 30vh;
+}
+.static-container {
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.static-box span {
+    font-size: 2rem;
+}
+
+/* Info container */
+
+.info {
+    height: 50vh;
+}
+
+.info-container {
+    padding: 100px;
+}
+
+.info-body {
+    font-weight: 400;
+}

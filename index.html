@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>RC Hackathon 2023</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar-->
+        <aside id="sidebar" class="collapsed">
+            <div class="h-100 sidebar-container">
+                <div class="sidebar-logo">
+                    <a href="#">RC Hackathon 2023</a>
+                </div>
+
+                <ul class="sidebar-nav pt-3">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-user pe-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Avalon
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle-->
+                <button class="btn" id="sidebar-btn" type="button" data-bs-theme="light" >
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            </nav>
+            <main class="content py-2">
+                <header class="container-fluid image-show">
+                    <div class="mb-3 head-container">
+                        <h3 class="display-3 text-center pt-5 text-white">Welcome to RC Hackathon website</h3>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </header>
+
+                <section class="statics container-fluid bg-primary">
+                    <div class="static-container">
+                        <div class="static-box d-flex flex-column align-items-center">
+                            <h1>โจทย์ทั้งหมด</h1>
+                            <span>25</span>
+                        </div>
+                        <div class="static-box d-flex flex-column align-items-center">
+                            <h1>ผู้เข้าร่วม</h1>
+                            <span>25</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info container-fluid bg-secondary">
+                    <div class="info-container text-center text-white">
+                        <h1 class="display-4 py-4">RC Hackathon คืออะไร?</h1>
+                        <p class="h2 info-body">กิจกรรมแข่งขันแก้โจทย์ปัญหาคอมพิวเตอร์ด้วยภาษา Python ภายในเวลาที่กำหนด</p>
+                    </div>
+                </section>
+            </main>
+            
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
