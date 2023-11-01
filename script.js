@@ -10,9 +10,10 @@ const profileElement = document.getElementById('profile');
 
 const userIcon = document.getElementById('user-icon');
 const loginButton = document.getElementById('login-icon');
+const loginUsername = document.getElementById('username');
 
 
-const checkLogin=()=> {
+const changeIcon=()=> {
     if (profileElement.classList.contains('login')) {
         userIcon.style.display = "block";
         loginButton.style.display = "none";
@@ -23,4 +24,14 @@ const checkLogin=()=> {
     }
 }
 
+const checkLogin=()=> {
+    if (localStorage.getItem("rc_hackathon_id") && profileElement.className == "profile") {
+        console.log("Added")
+        loginUsername.innerHTML = `${localStorage.getItem('rc_hackathon_name')}`
+        profileElement.classList.add('login')
+        changeIcon();
+    }
+}
+
+changeIcon();
 checkLogin();

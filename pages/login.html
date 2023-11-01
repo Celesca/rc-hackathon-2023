@@ -8,55 +8,105 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../style.css">
     <title>RC Hackathon 2023</title>
 </head>
 <body>
-    <section class="vh-100">
-        <div class="container-fluid h-custom">
-            <div class="Header text-center">
-                <h1>Welcome to RC Hackathon 2023</h1>
+  <div class="wrapper">
+    <!-- Sidebar-->
+    <aside id="sidebar" class="collapsed">
+        <div class="h-100 sidebar-container">
+            <div class="sidebar-logo">
+                <img class="py-3" src="../asset/undraw_programming.svg">
+                <a href="../index.html">RC Hackathon 2023</a>
             </div>
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-9 col-lg-6 col-xl-5">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                class="img-fluid" alt="hero-image">
-            </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 
-              <form>
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control form-control-lg"
-                    placeholder="Enter a valid email address" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-      
-                <!-- Password input -->
-                <div class="form-outline mb-3">
-                  <input type="password" id="form3Example4" class="form-control form-control-lg"
-                    placeholder="Enter password" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-      
-                <div class="d-flex justify-content-between align-items-center">
-                  <!-- Checkbox -->
-                  <div class="form-check mb-0">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="RememberMe" />
-                    <label class="form-check-label" for="form2Example3">
-                      Remember me
-                    </label>
-                  </div>
-                </div>
-      
-                <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" id="login-button" class="btn btn-primary btn-lg"
-                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                </div>
-      
-              </form>
-            </div>
-          </div>
+            <ul class="sidebar-nav pt-3">
+                <li class="sidebar-item">
+                    <a href="../index.html" class="sidebar-link">
+                        <i class="fa-solid fa-house pe-3"></i>หน้าหลัก
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fa-solid fa-list pe-3"></i>โจทย์ทั้งหมด
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fa-solid fa-list pe-3"></i>เกี่ยวกับเรา
+                    </a>
+                </li>
+
+
+            </ul>
         </div>
-      </section>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+        <nav class="navbar navbar-expand px-4 d-flex justify-content-between">
+            <!-- Button for sidebar toggle-->
+            <button class="btn" id="sidebar-btn" type="button" data-bs-theme="dark" >
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+        </nav>
+
+        <main class="content">
+          <section class="vh-70">
+            <div class="container-fluid h-custom">
+                <div class="Header text-center">
+                    <h1 class="display-5">Welcome to RC Hackathon 2023</h1>
+                </div>
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    class="img-fluid" alt="hero-image">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+    
+                  <form id="form">
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example3">อีเมลของมหาวิทยาลัย</label>
+                      <input type="email" id="email-form" class="form-control form-control-lg"
+                        placeholder="เช่น apichaya.phan@mail.kmutt.ac.th" />
+                      <small></small>
+                    </div>
+          
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example4">รหัสประจำตัวนักศึกษา</label>
+                      <input type="password" id="password-form" class="form-control form-control-lg"
+                        placeholder="เช่น 65070506001" />
+                      <small></small>
+                      
+                    </div>
+          
+                    <div class="d-flex justify-content-between align-items-center">
+                      <!-- Checkbox -->
+                      <div class="form-check mb-0">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="RememberMe" />
+                        <label class="form-check-label" for="form2Example3">
+                          จดจำฉัน
+                        </label>
+                      </div>
+                    </div>
+          
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                      <button type="submit" id="login-button" class="btn btn-lg text-white"
+                        style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                    </div>
+          
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+        </main>   
+</div>
 </body>
+<script src="login.js"></script>
 </html>

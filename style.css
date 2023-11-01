@@ -9,6 +9,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,12 +35,16 @@ a {
 
 #login-button a {
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
 }
 
 #login-button:hover {
-    background-color: var(--text-color);
+    background-color: var(--secondary-background-color);
     transition: background-color 0.1s ease-in;
+}
+
+#user-icon {
+    font-size: 20px;
 }
 
 /* Sidebar collapsed */
@@ -150,7 +155,7 @@ a.sidebar-link {
 }
 
 .head-container h3 {
-    text-shadow: 2px 2px solid rgba(0,0,0,0.7);
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
     font-size: 72px;
     background: -webkit-linear-gradient(var(--secondary-background-color), var(--text-color));
     -webkit-background-clip: text;
@@ -158,6 +163,7 @@ a.sidebar-link {
 }
 
 .head-container p {
+    text-shadow: 1px 1px black;
     color: var(--text-color);
     line-height: 45px;
 }
@@ -177,15 +183,14 @@ a.sidebar-link {
 /* Statics */
 
 .statics {
-    height: 30vh;
+    background-color: var(--dark-background-color);
 }
-.static-container {
-    padding-top: 100px;
+.static-number {
+    padding-top: 150px;
     display: flex;
-    width: 100%;
     justify-content: space-around;
-    
 }
+
 
 .static-box span {
     font-size: 2rem;
@@ -194,7 +199,14 @@ a.sidebar-link {
 /* Info container */
 
 .info {
-    height: 50vh;
+    background-color: var(--dark-background-color);
+    height: 70vh;
+}
+
+.info-image {
+    width: 35%;
+    border-radius: 5%;
+    object-fit: cover;
 }
 
 .info-container {
@@ -202,7 +214,7 @@ a.sidebar-link {
 }
 
 .info-body {
+    font-size: 24px;
     font-weight: 400;
+    line-height: 2rem;
 }
-
-/* Profile Section */

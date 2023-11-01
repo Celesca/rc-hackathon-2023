@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>RC Hackathon 2023</title>
 </head>
@@ -31,6 +32,11 @@
                             <i class="fa-solid fa-list pe-3"></i>โจทย์ทั้งหมด
                         </a>
                     </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-3"></i>เกี่ยวกับเรา
+                        </a>
+                    </li>
 
 
                 </ul>
@@ -46,9 +52,9 @@
                     </span>
                 </button>
                 <div class="profile" id="profile"> <!-- User and login state -->
-                    <div class="user-icon" id="user-icon">
+                    <div class="user-icon text-white" id="user-icon">
                         <i class="fa-solid fa-user"></i>
-                        Hi, <span class="username">Sawit Koseeyaumporn</span>
+                        Welcome back, <span class="username" id="username">Sawit Koseeyaumporn</span>
                     </div>
                     <div class="login-button" id="login-icon">
                                               
@@ -64,36 +70,55 @@
                 <div id="particles-js"></div>
                 <header class="container-fluid image-show d-flex">
 
-                    <div class="mb-3 head-container">
-                        <h3 class="display-1 pt-5 text-white">RC Hackathon 2023</h3>
+                    <div class="mb-3 head-container mt-4">
+                        <h3 class="display-1 pt-5 mt-4 text-white">RC Hackathon 2023</h3>
                         <p class="h3 pt-5">การแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์แก้โจทย์ปัญหาระดับมหาวิทยาลัย ด้วยภาษา Python</p>
                         <p class="h3">ส่งเสริมการแก้โจทย์ปัญหาและพัฒนาทักษะการคิดอย่างเป็นระบบ</p>
                         <p class="h3">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ราชบุรี</p>
                     </div>
                     <div>
-                        <img class="hero-image ms-5" src="asset/undraw_programming.svg">
+                        <img class="hero-image ms-5 pt-5" src="asset/undraw_programming.svg">
                     </div>
                 </header>
 
-                <section class="statics container-fluid bg-primary">
-                    <div class="static-container">
-                        <div class="static-box d-flex flex-column align-items-center">
-                            <h1>โจทย์ทั้งหมด</h1>
-                            <span>25</span>
+                <section class="info container-fluid">
+                    <div class="info-container text-white d-flex justify-content-around align-items-center">
+                        <div class="info-content" style="width: 600px;">
+                            <h1 class="display-4 py-4">RC Hackathon คืออะไร?</h1>
+                            <p class="info-body">กิจกรรมแข่งขันแก้โจทย์ปัญหาคอมพิวเตอร์ด้วยภาษา Python ภายในเวลาที่กำหนด
+                                เพียง 2 ชั่วโมง ใครที่ส่งเร็วกว่าและถูกต้องจะถือเป็นผู้ชนะ
+                            </p>
+                            <p class="info-body pt-2">การแก้โจทย์ปัญหาจำเป็นจะต้องใช้ทักษะ กระบวนการคิดแบบเป็นระบบและการแก้ปัญหาเฉพาะหน้า</p>
                         </div>
-                        <div class="static-box d-flex flex-column align-items-center">
-                            <h1>ผู้เข้าร่วม</h1>
-                            <span>25</span>
-                        </div>
+
+                        <img class="info-image shadow mb-5" src="https://cdn.pixabay.com/photo/2015/01/08/18/24/programming-593312_1280.jpg"/>
                     </div>
                 </section>
 
-                <section class="info container-fluid bg-secondary">
-                    <div class="info-container text-center text-white">
-                        <h1 class="display-4 py-4">RC Hackathon คืออะไร?</h1>
-                        <p class="h2 info-body">กิจกรรมแข่งขันแก้โจทย์ปัญหาคอมพิวเตอร์ด้วยภาษา Python ภายในเวลาที่กำหนด</p>
+                <section class="statics container-fluid pb-5">
+                    <div class="static-container pt-5 pb-5">
+                        <div class="container">
+                        <div class="row">
+                            <div class="static-number col-6 text-white">
+                                <div class="static-box d-flex flex-column align-items-center">
+                                    <h2>โจทย์ทั้งหมด</h2>
+                                    <span>10</span>
+                                </div>
+                                <div class="static-box d-flex flex-column align-items-center">
+                                    <h2>ผู้เข้าร่วม</h2>
+                                    <span>6</span>
+                                </div>
+                            </div>
+
+                            <div style="width: 400px;" class="col-6 ms-auto pt-5">
+                                <canvas id="pie-chart"></canvas>
+                            </div>
+                        </div>
                     </div>
+                </div>
                 </section>
+
+
                 </div>
 
             </main>   
@@ -103,4 +128,5 @@
 <script src="script.js"></script>
 <script type="text/javascript" src="particles.js"></script>
 <script type="text/javascript" src="app.js"></script>
+<script type=""src="myChart.js"></script>
 </html>

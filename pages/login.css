@@ -1,3 +1,20 @@
 .Header {
-    padding-top: 200px;
+    padding-top: 100px;
+}
+
+.form-outline.error input{
+    border-color: red;
+}
+
+.form-outline.success input {
+    border-color: green;
+}
+
+.form-outline small{
+    color: red;
+    visibility: hidden;
+}
+
+.form-outline.error small {
+    visibility: visible;
 }
