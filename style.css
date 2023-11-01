@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap');
 
 :root {
-    --background-color: orange;
-    --dark-background-color: red;
+    --background-color: #2B7A77;
+    --secondary-background-color: rgb(58,175,169);
+    --dark-background-color: #17242A;
+    --text-color: #DEF2F1;
 }
 
-* , ::after , ::before {
+* {
     box-sizing: border-box;
-
 }
 
 body {
@@ -19,8 +20,29 @@ body {
 a {
     cursor: pointer;
     text-decoration: none;
-
 }
+
+/* Navbar section */
+.navbar {
+    background-color: var(--background-color);
+    height: 70px;
+}
+
+#login-button {
+    background-color: var(--dark-background-color);
+}
+
+#login-button a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#login-button:hover {
+    background-color: var(--text-color);
+    transition: background-color 0.1s ease-in;
+}
+
+/* Sidebar collapsed */
 
 .wrapper {
     align-items: stretch;
@@ -34,7 +56,7 @@ a {
     transition: all 0.35s ease-in-out;
 }
 
-/* Sidebar collapsed */
+
 
 #sidebar.collapsed {
     margin-left: -264px;
@@ -54,9 +76,13 @@ a {
     padding: 1.15rem 1.5rem;
 }
 
+.sidebar-logo img {
+    width: 200px;
+}
+
 .sidebar-logo a {
     color: #e9ecef;
-    font-size: 1.25rem;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -77,6 +103,10 @@ a.sidebar-link {
     display: block;
 }
 
+.sidebar-link a i {
+    font-size: 50px;
+}
+
 .sidebar-item:hover {
     background-color: var(--dark-background-color);
     transition: background-color 0.1s ease-in-out;
@@ -89,20 +119,53 @@ a.sidebar-link {
 
 /* Content */
 
+#particles-js{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+  
+
 .image-show {
-    background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/22/20/36/mountains-4356017_1280.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    object-fit: cover;
+    height: 100vh;
 }
 
 .head-container {
-    padding-top: 150px;
+    padding-top: 100px;
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    max-width: 50%;
+}
+
+.head-container h3 {
+    text-shadow: 2px 2px solid rgba(0,0,0,0.7);
+    font-size: 72px;
+    background: -webkit-linear-gradient(var(--secondary-background-color), var(--text-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head-container p {
+    color: var(--text-color);
+    line-height: 45px;
+}
+
+.hero-image {
+    z-index: 100;
+    padding-top: 100px;
+    width: 85%;
 }
 
 .head-container button {
@@ -141,3 +204,5 @@ a.sidebar-link {
 .info-body {
     font-weight: 400;
 }
+
+/* Profile Section */

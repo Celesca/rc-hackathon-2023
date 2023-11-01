@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="asset/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -16,19 +16,19 @@
         <aside id="sidebar" class="collapsed">
             <div class="h-100 sidebar-container">
                 <div class="sidebar-logo">
-                    <a href="#">RC Hackathon 2023</a>
+                    <img class="py-3" src="asset/undraw_programming.svg">
+                    <a href="index.html">RC Hackathon 2023</a>
                 </div>
 
                 <ul class="sidebar-nav pt-3">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-user pe-2"></i>Home
+                        <a href="index.html" class="sidebar-link">
+                            <i class="fa-solid fa-house pe-3"></i>หน้าหลัก
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            Avalon
+                            <i class="fa-solid fa-list pe-3"></i>โจทย์ทั้งหมด
                         </a>
                     </li>
 
@@ -39,18 +39,39 @@
 
         <!-- Main -->
         <div class="main">
-            <nav class="navbar navbar-expand px-3 border-bottom">
+            <nav class="navbar navbar-expand px-4 d-flex justify-content-between">
                 <!-- Button for sidebar toggle-->
-                <button class="btn" id="sidebar-btn" type="button" data-bs-theme="light" >
+                <button class="btn" id="sidebar-btn" type="button" data-bs-theme="dark" >
                     <span class="navbar-toggler-icon">
                     </span>
                 </button>
+                <div class="profile" id="profile"> <!-- User and login state -->
+                    <div class="user-icon" id="user-icon">
+                        <i class="fa-solid fa-user"></i>
+                        Hi, <span class="username">Sawit Koseeyaumporn</span>
+                    </div>
+                    <div class="login-button" id="login-icon">
+                                              
+                        <button class="btn px-4" id="login-button">
+                            <a href="pages/login.html">เข้าสู่ระบบ</a>
+                        </button>
+
+                    </div>
+                </div>
             </nav>
-            <main class="content py-2">
-                <header class="container-fluid image-show">
+
+            <main class="content">
+                <div id="particles-js"></div>
+                <header class="container-fluid image-show d-flex">
+
                     <div class="mb-3 head-container">
-                        <h3 class="display-3 text-center pt-5 text-white">Welcome to RC Hackathon website</h3>
-                        <button class="btn btn-primary">Get Started</button>
+                        <h3 class="display-1 pt-5 text-white">RC Hackathon 2023</h3>
+                        <p class="h3 pt-5">การแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์แก้โจทย์ปัญหาระดับมหาวิทยาลัย ด้วยภาษา Python</p>
+                        <p class="h3">ส่งเสริมการแก้โจทย์ปัญหาและพัฒนาทักษะการคิดอย่างเป็นระบบ</p>
+                        <p class="h3">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ราชบุรี</p>
+                    </div>
+                    <div>
+                        <img class="hero-image ms-5" src="asset/undraw_programming.svg">
                     </div>
                 </header>
 
@@ -73,12 +94,13 @@
                         <p class="h2 info-body">กิจกรรมแข่งขันแก้โจทย์ปัญหาคอมพิวเตอร์ด้วยภาษา Python ภายในเวลาที่กำหนด</p>
                     </div>
                 </section>
-            </main>
-            
-        </div>
-    </div>
+                </div>
 
+            </main>   
+    </div>
 
 </body>
 <script src="script.js"></script>
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </html>
