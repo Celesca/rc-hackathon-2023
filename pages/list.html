@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="list.css">
     <title>RC Hackathon 2023</title>
 </head>
 <body>
@@ -52,11 +53,250 @@
             </nav>
 
             <main class="content">
-                <div class="easy-container">
-                    <h1>Easy</h1>
+              <div id="myModal" class="alert alert-danger text-center">
+                <h5>Login Successful</h5>
+                <p>We will take you to the main page.</p>
+              </div>
+                <div class="easy-container container pt-4">
+                    <div class="d-flex align-items-center text-white">
+                        <h1>Easy</h1>
+                        &nbsp;&nbsp; <i class="fa-solid fa-star text-warning"></i>
                     </div>
+                    
+                    <div class="easy-item mt-4">
+                        <a href="./quiz/001.html">
+                        <div class="card p-2">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <h4 class="card-title pt-1">เพลงนี้ของใคร</h5>
+                                <button class="btn btn-danger button-status">Status : ยังไม่ผ่าน</button>
+                              </div>
+                              <p class="card-text mt-3">มานพ อยากรู้ว่าวงเพลงที่เขาสนใจมีเพลงอะไรบ้างกันนะ?</p>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+
+                    <div class="easy-item item-1 mt-4">
+                        <a href="./quiz/002.html">
+                        <div class="card p-2">
+                            <div class="card-body">
+
+                              <div class="d-flex justify-content-between">
+                                <h4 class="card-title pt-1">เอกสารราชการ</h5>
+                                <button class="btn btn-danger button-status">Status : ยังไม่ผ่าน</button>
+                              </div>
+                              <p class="card-text mt-3">รุ่นน้องฝึกงานที่ราชการ กำลังแก้ไขรายงานอยู่ แต่รุ่นน้องมีจุดที่เขียนผิดเยอะ ช่วยเขียนโปรแกรม
+                                แก้ไขเพื่อความรวดเร็วให้ที
+                              </p>
+
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+
+                    <div class="easy-item mt-4">
+                        <a href="./quiz/003.html">
+                        <div class="card p-2">
+                            <div class="card-body">
+
+                              <div class="d-flex justify-content-between">
+                                <h4 class="card-title pt-1">จับคนโกงข้อสอบ</h5>
+                                <button class="btn btn-success button-status">Status : ผ่าน</button>
+                              </div>
+                              <p class="card-text mt-3">ในการสอบวิชาคณิตศาสตร์ ด้วยความที่อาจารย์ไว้ใจมากเลย ให้นักเรียนทุกคนกรอกคะแนนที่ได้
+                              </p>
+
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+
+                    <div class="easy-item mt-4">
+                        <a href="./quiz/004.html">
+                        <div class="card p-2">
+                            <div class="card-body">
+
+                              <div class="d-flex justify-content-between">
+                                <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                                <button class="btn btn-success button-status">Status : ผ่าน</button>
+                              </div>
+                              <p class="card-text mt-3">เกมข้ามฝั่งแสนสนุกที่มีเงื่อนไขนิดหน่อย</p>
+
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+
+                    <div class="easy-item mt-4">
+                        <a href="./quiz/005.html">
+                        <div class="card p-2">
+                            <div class="card-body">
+
+                              <div class="d-flex justify-content-between">
+                                <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                                <button class="btn btn-success button-status">Status : ผ่าน</button>
+                              </div>
+                              <p class="card-text mt-3">เกมข้ามฝั่งแสนสนุกที่มีเงื่อนไขนิดหน่อย</p>
+
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="medium-container container pt-4">
+                        <div class="d-flex align-items-center text-white">
+                            <h1>Medium</h1>
+                            &nbsp;&nbsp; <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                        
+                        </div>
+
+                        <div class="medium-item mt-4">
+                          <a href="./quiz/006.html">
+                          <div class="card p-2">
+                              <div class="card-body">
+  
+                                <div class="d-flex justify-content-between">
+                                  <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                                  <button class="btn btn-success button-status">Status : ผ่าน</button>
+                                </div>
+                                <p class="card-text mt-3">ณ ค่ายลูกเสือหนึ่ง เรื่องมีอยู่ว่าอาจารย์พาเด็กทั้ง 3 คนมาด้วยกันแต่ต้องเจอแม่น้ำ
+                                  ที่ต้องข้ามฝั่ง จะเป็นยังไงถ้าพาข้ามด้วยเรือได้แค่คนเดียว
+                                </p>
+  
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="medium-item mt-4">
+                          <a href="./quiz/007.html">
+                          <div class="card p-2">
+                              <div class="card-body">
+  
+                                <div class="d-flex justify-content-between">
+                                  <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                                  <button class="btn btn-success button-status">Status : ผ่าน</button>
+                                </div>
+                                <p class="card-text mt-3">ณ ค่ายลูกเสือหนึ่ง เรื่องมีอยู่ว่าอาจารย์พาเด็กทั้ง 3 คนมาด้วยกันแต่ต้องเจอแม่น้ำ
+                                  ที่ต้องข้ามฝั่ง จะเป็นยังไงถ้าพาข้ามด้วยเรือได้แค่คนเดียว
+                                </p>
+  
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="medium-item mt-4">
+                          <a href="./quiz/008.html">
+                          <div class="card p-2">
+                              <div class="card-body">
+  
+                                <div class="d-flex justify-content-between">
+                                  <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                                  <button class="btn btn-success button-status">Status : ผ่าน</button>
+                                </div>
+                                <p class="card-text mt-3">ณ ค่ายลูกเสือหนึ่ง เรื่องมีอยู่ว่าอาจารย์พาเด็กทั้ง 3 คนมาด้วยกันแต่ต้องเจอแม่น้ำ
+                                  ที่ต้องข้ามฝั่ง จะเป็นยังไงถ้าพาข้ามด้วยเรือได้แค่คนเดียว
+                                </p>
+  
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="medium-item mt-4">
+                          <a href="./quiz/009.html">
+                          <div class="card p-2">
+                              <div class="card-body">
+  
+                                <div class="d-flex justify-content-between">
+                                  <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                                  <button class="btn btn-success button-status">Status : ผ่าน</button>
+                                </div>
+                                <p class="card-text mt-3">ณ ค่ายลูกเสือหนึ่ง เรื่องมีอยู่ว่าอาจารย์พาเด็กทั้ง 3 คนมาด้วยกันแต่ต้องเจอแม่น้ำ
+                                  ที่ต้องข้ามฝั่ง จะเป็นยังไงถ้าพาข้ามด้วยเรือได้แค่คนเดียว
+                                </p>
+  
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                </div>
+
+                <div class="hard-container container pt-4">
+                  <div class="d-flex align-items-center text-white">
+                      <h1>Hard</h1>
+                      &nbsp;&nbsp; <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                  
+                  </div>
+
+                  <div class="hard-item mt-4">
+                    <a href="./quiz/006.html">
+                    <div class="card p-2">
+                        <div class="card-body">
+
+                          <div class="d-flex justify-content-between">
+                            <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                            <button class="btn btn-success button-status">Status : ผ่าน</button>
+                          </div>
+                          <p class="card-text mt-3">ณ ค่ายลูกเสือหนึ่ง เรื่องมีอยู่ว่าอาจารย์พาเด็กทั้ง 3 คนมาด้วยกันแต่ต้องเจอแม่น้ำ
+                            ที่ต้องข้ามฝั่ง จะเป็นยังไงถ้าพาข้ามด้วยเรือได้แค่คนเดียว
+                          </p>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="hard-item mt-4">
+                    <a href="./quiz/007.html">
+                    <div class="card p-2">
+                        <div class="card-body">
+
+                          <div class="d-flex justify-content-between">
+                            <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                            <button class="btn btn-success button-status">Status : ผ่าน</button>
+                          </div>
+                          <p class="card-text mt-3">ณ ค่ายลูกเสือหนึ่ง เรื่องมีอยู่ว่าอาจารย์พาเด็กทั้ง 3 คนมาด้วยกันแต่ต้องเจอแม่น้ำ
+                            ที่ต้องข้ามฝั่ง จะเป็นยังไงถ้าพาข้ามด้วยเรือได้แค่คนเดียว
+                          </p>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="hard-item mt-4 mb-4">
+                    <a href="./quiz/008.html">
+                    <div class="card p-2">
+                        <div class="card-body">
+
+                          <div class="d-flex justify-content-between">
+                            <h4 class="card-title pt-1">เรือเล็กควรออกจากฝั่ง</h5>
+                            <button class="btn btn-success button-status">Status : ผ่าน</button>
+                          </div>
+                          <p class="card-text mt-3">ณ ค่ายลูกเสือหนึ่ง เรื่องมีอยู่ว่าอาจารย์พาเด็กทั้ง 3 คนมาด้วยกันแต่ต้องเจอแม่น้ำ
+                            ที่ต้องข้ามฝั่ง จะเป็นยังไงถ้าพาข้ามด้วยเรือได้แค่คนเดียว
+                          </p>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+              </div>
+
+              <footer>
+                  <div class="container text-white text-center py-3"><p>&copy;Copyright RC Hackathon 2023</p></div>
+              </footer>
+
             </main>   
     </div>
+  </div>
 
 </body>
 <script src="list.js"></script>
