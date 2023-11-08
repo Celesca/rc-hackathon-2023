@@ -7,6 +7,7 @@ toggler.addEventListener("click", function() {
 const form = document.getElementById('form');
 const email = document.getElementById('email-form');
 const password = document.getElementById('password-form');
+const modal = document.getElementById('myModal');
 let emailCheck = false
 let passwordCheck = false
 
@@ -29,8 +30,14 @@ function loginSuccess() {
         localStorage.setItem("rc_hackathon_email" , email.value)
         localStorage.setItem("rc_hackathon_id", password.value)
         settingName()
-        window.location.href="../index.html";
-    }
+        modal.style.display = 'block';
+
+        setTimeout(function () {
+            // Replace 'nextPage.html' with the actual URL of the next page
+            window.location.href = '../index.html';
+          }, 3000);
+        }
+
 }
 
 function settingName() {
@@ -94,4 +101,7 @@ const validateEmail = (email) => {
 
 function getInputCase(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
+function enterCheck() {
 }
