@@ -1,0 +1,10 @@
+:root {
+    --background-color: #2B7A77;
+    --secondary-background-color: rgb(58,175,169);
+    --dark-background-color: #17242A;
+    --text-color: #DEF2F1;
+}
+
+.content {
+    background-color: var(--dark-background-color);
+}
