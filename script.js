@@ -35,3 +35,17 @@ const checkLogin=()=> {
 
 changeIcon();
 checkLogin();
+
+// Join Button
+
+const join = document.getElementById("join-button")
+
+join.addEventListener('click', ()=> {
+    if (localStorage.getItem("rc_hackathon_id")) {
+        window.location.href = './pages/list.html';
+    }
+    else {
+        window.location.href = './pages/login.html';
+    }
+})
+

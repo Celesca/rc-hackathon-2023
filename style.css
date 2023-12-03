@@ -183,7 +183,7 @@ a.sidebar-link {
 /* Statics */
 
 .statics {
-    background-color: var(--dark-background-color);
+    background-color: var(--background-color);
 }
 .static-number {
     padding-top: 150px;
@@ -217,4 +217,14 @@ a.sidebar-link {
     font-size: 24px;
     font-weight: 400;
     line-height: 2rem;
+}
+
+.copyright-container {
+    background-color: var(--background-color);
+}
+
+#join-button {
+    width: 25%;
+    padding: 15px;
+    font-size: 24px;
 }
