@@ -32,3 +32,9 @@
 #myModal p {
     margin:0;
 }
+
+.qrcode-container {
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/22/20/36/mountains-4356017_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -3,7 +3,7 @@ const app = express()
 const bodyP = require("body-parser");
 const compiler = require("compilex");
 const options = { stats: true}
-compiler.init()
+compiler.init(options)
 
 app.use(bodyP.json())
 app.use("./pages/quiz/codemirror-5.65.16" , express.static("./pages/quiz/codemirror-5.65.16"))
