@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../asset/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../style.css">
+    
+    <title>RC Hackathon 2023</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar-->
+    <aside id="sidebar" class="collapsed">
+        <div class="h-100 sidebar-container">
+            <div class="sidebar-logo">
+                <img class="py-3" src="../asset/undraw_programming.svg">
+                <a href="../index.html">RC Hackathon 2023</a>
+            </div>
+
+            <ul class="sidebar-nav pt-3">
+                <li class="sidebar-item">
+                    <a href="../index.html" class="sidebar-link">
+                        <i class="fa-solid fa-house pe-3"></i>หน้าหลัก
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./list.html" class="sidebar-link">
+                        <i class="fa-solid fa-list pe-3"></i>โจทย์ทั้งหมด
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fa-solid fa-list pe-3"></i>เกี่ยวกับเรา
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+        <nav class="navbar navbar-expand px-4 d-flex justify-content-between">
+            <!-- Button for sidebar toggle-->
+            <button class="btn" id="sidebar-btn" type="button" data-bs-theme="dark" >
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+        </nav>
+
+        <main class="content">
+          <section class="vh-100 qrcode-container">
+            <div class="container-fluid h-custom">
+                <div class="Header text-center text-white">
+                    <h1 class="display-5">ขอบคุณที่เข้าร่วมการแข่งขันกับเรา</h1>
+                    <p class="h4 pt-3">สแกนเพื่อประเมินกิจกรรมและรับชั่วโมงกิจกรรม</p>
+                    <img src="../asset/qr_code.png" class="w-25">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-primary">กลับสู่หน้าหลัก</button>
+            </div>
+              </div>
+          </section>
+    
+        </main>   
+</div>
+</body>
+<script src="login.js"></script>
+</html>
